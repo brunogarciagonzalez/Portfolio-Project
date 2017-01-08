@@ -10,6 +10,9 @@
   flex-direction: column; }
   .hero.landscape {
     color: white; }
+  .hero.bridge {
+    background-image: url(../img/bridge/full-width.jpg);
+    width: 100%; }
   .hero h1 {
     line-height: 55px;
     font-size: 72px; }
@@ -37,7 +40,7 @@
   border-radius: 4px;
   cursor: pointer; }
   .cta:hover {
-    background-color: #00CFFF; }
+    background-color: #00cfff; }
 
 #about {
   min-height: 0px; }
@@ -71,10 +74,6 @@
       height: 100%;
       max-width: 390px;
       max-height: 380px; }
-
-.bridge {
-  background-image: url(../img/bridge/full-width.jpg);
-  width: 100%; }
 
 #contact p {
   font-size: 24px;
@@ -116,6 +115,68 @@
 .copyright {
   margin-left: auto;
   color: #00e2ac; }
+
+#sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  padding-top: 10px;
+  font-family: "Roboto", serif;
+  color: white;
+  background-color: black;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s ease; }
+  #sidebar-wrapper h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 4px;
+    padding: 0; }
+  #sidebar-wrapper a {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; }
+  #sidebar-wrapper.open {
+    width: 320px; }
+  #sidebar-wrapper .sidebar-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+#close-btn {
+  margin-left: 30px;
+  margin-top: 10px;
+  align-self: flex-start;
+  color: white;
+  cursor: pointer; }
+  #close-btn:hover {
+    opacity: 0.5; }
+  #close-btn img {
+    height: 30px;
+    width: 30px; }
+
+#hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 34px;
+  width: 40px;
+  left: 30px;
+  top: 20px;
+  border-radius: 4px;
+  background-color: black;
+  z-index: 1; }
+  #hamburger:hover {
+    background-color: #00cfff; }
+  #hamburger img {
+    height: 30px;
+    width: 30px; }
 
 @media only screen and (max-width: 480px) {
   #intro {
